@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<link rel="stylesheet" type="text/css" href="../css\bootstrap.min.css">
+<link type="text/css" relrel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../home.css">
+</style>
+<body class="bg-success">
+
+
+<div class="container-sm bg-white ">
+	<div class="container-sm shadow bg-info">
+		<span id="hid1" class="lu" onclick="document.getElementById('id01').style.display='block';" style="color:red;font-size:45px;margin-left:10px;width:48%">&plus;
+		</span>
+<span></span>
+
+		<span id="hid" class="btn bg-white" onclick="print();window.print()" style="font-size:20px;margin-left:50px">print</span>
+	<span id="hid2" class="btn btn-danger" onclick="dlt()" style="color:white;font-size:20px;">delete</span>
+
+	</a>
+	<span>
+</span>
+
+	<span></span>
+	<span>
+		<span onclick="myFunction()" class="   dropbtn " style="color:white:float:right;padding-left:20px;border-radius:20px">more</span>
+
+		<div id="myDropdown" class="dropdown-content">
+			
+			<a><span id="hid2" onclick="window.alert('this action can delete entairy table data permenently');dlt()" style="color:red;font-size:20px;width:48%">delete table</span></a>
+
+
+		</div>
+
+</div>
+
+<div class="container-sm shadow m-2 bg-success">
+	
+
+<table class="table table-condensed table-striped table-responsive table-hover bg-white "
+id="myTable">
+
+<thead>
+<th scope="col" id="no" onclick="no()"><input type="text" style="width:40px;display:none" id="noi"> No</th>
+
+<th scope="col" id="nn" ="fname()"><input type="text" style="width:40px;display:none" id="fnamei">firstname</th>
+<th scope="col">midlename</th>
+<th scope="col" id="mk1" onclick="mark1()">lastname<input type="text" id="mark1i" style="width: 40px;display: none"></th>
+<th scope="col" id="lnamke" onclick="lname()"><input type="text" style="width:40px;display:none" id="lnamei">sid</th>
+
+<th scope="col" id="mark2"><input type="text" style="width:40px;display:none" id="mark2i">age</th>
+
+<th scope="col">gender</th>
+
+<th scope="col" id="mark4"><input type="text" style="width:40px;display:none" id="mark4i">update </th>
+
+
+<th scope="col" id="mark4"><input type="text" style="width:40px;display:none" id="mark4i">delete</th>
+
+
+</thead>
+<tbody>
+
+</tbody>
+</table>
+</div>
+</div>
+<div id="id01" class="modal container-sm shadow">
+
+<form class="modal-content animate" action="" name="my-form" onsubmit="event.preventDefault();onformsubmit();">
+<div class="imgcontainer">
+<span onclick="document.getElementById('id01').style.display='none'"class="close" title="Close Modal"> &times;</span>
+
+
+</div>
+
+
+<div class="container-sm shadow p-2">
+<p class="bg-success ">
+students registiration form
+</p>
+<input type="hidden" class=" form-control"placeholder=
+"" name="mark1" id="mark1" value="0">
+<input type="hidden" class=" form-control"placeholder=
+"" name="mark2" id="mark2" value="0">
+<input type="hidden" class=" form-control"placeholder=
+"" name="mark3" id="mark3" value="0">
+<input type="hidden" class=" form-control"placeholder=
+"" name="mark4" id="mark4" value="0">
+<input type="hidden" class=" form-control"placeholder=
+"" name="mark5" id="mark5" value="0">
+<input type="hidden" class=" form-control"placeholder=
+"" name="mark6" id="mark6" value="0">
+<input type="hidden" class=" form-control"placeholder=
+"" name="mark7" id="mark7" value="0">
+<input type="hidden" class=" form-control"placeholder=
+"" name="mark8" id="mark8" value="0">
+<input type="hidden" class=" form-control"placeholder=
+"" name="mark9" id="mark9" value="0">
+<input type="hidden" class=" form-control"placeholder=
+"" name="mark10" id="mark10" value="0">
+<input type="hidden" class=" form-control"placeholder=
+"" name="mark11" id="mark11" value="0">
+<input type="hidden" class=" form-control"placeholder=
+"" name="mark12" id="mark12" value="0">
+<input type="hidden" name="av" id="" value="0" />
+
+
+<input type="hidden" name="no" id="no" value=""> <br>
+<input type="hidden" name="id" id="id" value="0"> <br>
+<label for="inputJK"class="form-label">first name</label><br>
+<input type="text" id="inputNL" name="inputNL" class="form-control mb-2" placeholder="" style="width: 90%">
+<label for="inputJK"class="form-label">midle name</label><br>
+<input type="text" id="midle" name="midle" class="form-control mb-2" placeholder="" style="width: 90%">
+
+<label for="inputNH" class="form-label">last name</label><br>
+
+<input type="text" id="inputNH" name="inputNH" class="form-control mb-2" placeholder="" style="width:90%">
+<label for="inputJK"class="form-label">student id</label><br>
+
+
+
+<input type="text"class="form-control " id="inputJK" name="inputJK" style="width: 90%"> <br>
+
+<label for="inputA" class="form-label">age</label><br>
+<input type="number" id="inputA" min="02-02-206" max="02-01-1960" value="02-02-206" name="inputA" class="form-control mb-2" placeholder="" style="width: 90%"><br>
+
+
+<label for="inputb" class="form-label">gender</label><br>
+<select name="gender" type="" id="gender" class="form-control">
+	<option>male</option>
+	<option>female</option>
+	<option>costom</option>
+</select>
+
+
+
+<button type="submit" >save</button>
+
+
+
+</div>
+</form>
+</div>
+<div id="id02" class="modal container-sm shadow">
+
+<form class="modal-content animate" action="" name="my-form" >
+<div class="imgcontainer">
+<span onclick="document.getElementById('id02').style.display='none'"class="close" title="Close Modal"> &times;</span>
+
+
+</div>
+
+
+<div class="container-sm shadow p-2">
+<p class="bg-success ">
+students registiration form
+</p>
+<input type="hidden" class="mark1 form-control"placeholder=
+"" name="mark1" id="mark1" value="0">
+<input type="hidden" class="mark2 form-control"placeholder=
+"" name="mark2" id="mark2" value="0">
+<input type="hidden" class="mark3 form-control"placeholder=
+"" name="mark3" id="mark3" value="0">
+<input type="hidden" class="mark4 form-control"placeholder=
+"" name="mark4" id="mark4" value="0">
+<input type="hidden" class="mark5 form-control"placeholder=
+"" name="mark5" id="mark5" value="0">
+<input type="hidden" class="mark6 form-control"placeholder=
+"" name="mark6" id="mark6" value="0">
+<input type="hidden" class="mark7 form-control"placeholder=
+"" name="mark7" id="mark7" value="0">
+<input type="hidden" class="mark8 form-control"placeholder=
+"" name="mark8" id="mark8" value="0">
+<input type="hidden" class="mark9 form-control"placeholder=
+"" name="mark9" id="mark9" value="0">
+<input type="hidden" class="mark10 form-control"placeholder=
+"" name="mark10" id="mark10" value="0">
+<input type="hidden" class="mark11 form-control"placeholder=
+"" name="mark11" id="mark11" value="0">
+<input type="hidden" class="mark12 form-control"placeholder=
+"" name="mark12" id="mark12" value="0">
+<input type="hidden" name="av" id="av" value="" />
+
+
+<input type="hidden" name="no"  id="no" value="0"> <br>
+<input type="hidden" name="id" id="id" class="id" value="0"> <br>
+<label for="inputJK"class="form-label">first name</label><br>
+<input type="text" id="fn" name="inputNL" class="fnam form-control mb-2" placeholder="" style="width: 90%">
+<label for="inputJK"class="form-label">midle name</label><br>
+<input type="text" id="mid" name="midle" class="mid form-control mb-2" placeholder="" style="width: 90%">
+
+
+<label for="inputNH" class="form-label">last name</label><br>
+
+<input type="text" id="ln" name="inputNH" class="lnam form-control mb-2" placeholder="" style="width:90%">
+<label for="inputJK"class=" form-label">student id</label><br>
+
+
+
+<input type="text"class="sid form-control " id="sid" name="inputJK" style="width: 90%"> <br>
+
+<label for="inputA" class="form-label">age</label><br>
+<input type="number" id="ag" min="02-02-206" max="02-01-1960" value="02-02-206" name="inputA" class="ag form-control mb-2" placeholder="" style="width: 90%"><br>
+
+
+<label for="inputb" class="form-label">gender</label><br>
+<select name="gender" id="gen" class="sex form-control">
+	<option>male</option>
+	<option>female</option>
+	<option>costom</option>
+</select>
+
+
+
+<button type="submit" id="sup">save</button>
+
+
+
+</div>
+</form>
+</div>
+
+<script type="text/javascript" src="st7.js">
+
+
+</script>
+</body>
+</html>

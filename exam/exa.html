@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<link rel="stylesheet" type="text/css" href="../css\bootstrap.min.css">
+<link type="text/css" relrel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="style.css">
+</style>
+<body class="">
+
+
+<div class="container-sm bg-white ">
+
+<button id="print" class ="btn btn-success "onclick="print()" style="width:100%;padding-right:20px">print</button>
+<center><button id="plus" class="btn btn-info" onclick="document.getElementById('id01').style.display='block';" style="color:cyan;font-size:40px">&oplus;
+</button></center>
+<span id="st1" class="btn btn-primary "></span>
+<!--  <table class="table   table-responsive table-hover "
+ id="myTable">
+	
+<thead>
+    
+</thead>
+<tbody>
+    
+</tbody>
+
+	
+
+
+
+
+
+</table> -->
+<span id="n"></span>
+<span id="q"></span><br>
+<span id="a"></span> <span id="b"></span>
+<span id="c"></span> <span id="d"></span><span id="e"></span>
+</div>
+<div id="id01" class="modal container-sm shadow">
+
+<form class="modal-content animate" action="" name="my-form" onsubmit="event.preventDefault();onformsubmit();">
+<div class="imgcontainer">
+<span onclick="document.getElementById('id01').style.display='none'"class="close" title="Close Modal"> &times;</span>
+
+
+</div>
+
+
+<div class="container-sm shadow p-2">
+<p class="bg-success ">
+students registiration form
+</p>
+<input type="hidden" name="no" id="no" value=""> <br>
+
+<label for="inputJK"class="form-label">enter your question </label><br>
+<textarea cols="3" id="question" rows="2" name="question" class="form-control"></textarea>
+<label for="inputNH" class="form-label">choose A</label><br>
+
+<input type="text" id="A" name="A" class="form-control mb-2" placeholder="" style="width:90%">
+<label for="inputJK"class="form-label">Choose B</label><br>
+
+
+
+<input type="text"class="form-control " id="B" name="B" style="width: 90%"> <br>
+
+<label for="inputA" class="form-label">Choose C</label><br>
+<input type="text" id="C" name="C" class="form-control mb-2" placeholder="" style="width: 90%"><br>
+<label for="inputb" class="form-label">Choose D</label><br>
+<input type="text" id="D" name="D" class="form-control mb-2" placeholder="" style="width: 90%"><br>
+<label for="inputb" class="form-label">Choose E</label><br>
+<input type="text" id="E" name="E" class="form-control mb-2" placeholder="" style="width: 90%"><br>
+
+<button type="submit">save</button>
+
+
+<div class="container"
+style="background-color:#f1f1f1">
+
+
+</a></span>
+</div>
+</form>
+</div>
+
+<script type="text/javascript" src="ex.js">
+
+
+</script>
+</body>
+</html>
